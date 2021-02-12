@@ -1,0 +1,25 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+lst = []
+for i in range(n):
+    a = input()
+    lst.append(a)
+for i in lst:
+    try:
+        if int(i):
+            if len(str(i)) == 10 and  str(i)[0] == str(7):
+                print('YES')
+            elif len(str(i)) == 10  and  str(i)[0] == str(8):
+                print('YES')
+            elif len(str(i)) == 10 and   str(i)[0] == str(9):
+                print('YES')
+            else:
+                print('NO')
+        else:
+            print('NO')
+
+    except ValueError:
+        print('NO')
+
+
+
